@@ -1,0 +1,41 @@
+// слайдер главной страницы
+
+
+let btnSlidR = document.getElementById('btn-slider-right');
+let btnSlidL = document.getElementById('btn-slider-left');
+let slidLine = document.getElementById('slider-line');
+let controls = document.querySelectorAll('.control');
+
+let countSlid = 0;
+let marginSlLine = 0;
+
+btnSlidR.addEventListener('click', function(){
+    controls[countSlid].classList.remove('active');
+    countSlid +=1;
+    if(countSlid === 3){
+        countSlid = 0;
+        marginSlLine = 0;
+        slidLine.style.marginLeft = marginSlLine;
+    }
+    else{
+    marginSlLine -= 480;   
+    slidLine.style.marginLeft = marginSlLine + 'px';}
+    controls[countSlid].classList.add('active');
+})
+
+btnSlidL.addEventListener('click', function(){
+    controls[countSlid].classList.remove('active');
+    countSlid -=1;
+    if(countSlid === -1){
+        countSlid = 2;
+        marginSlLine = -960;
+        slidLine.style.marginLeft = marginSlLine + 'px';
+    }
+    else{
+    marginSlLine += 480;   
+    slidLine.style.marginLeft = marginSlLine + 'px';}
+    controls[countSlid].classList.add('active');
+})
+
+
+// 

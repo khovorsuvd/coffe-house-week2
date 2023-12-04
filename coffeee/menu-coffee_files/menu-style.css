@@ -1,0 +1,239 @@
+.main_title.p2{
+    margin-top: 0px;
+    margin-bottom: 31px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_nav-pic-btn{
+    display: inline-block;
+  
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.galery-item{
+    max-width: 310px;
+    height: 506px;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+}
+.itemImg > img{
+    border-radius: 40px;
+}
+.itemImg{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 310px;
+  border-radius: 40px;
+}
+.menu-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+    margin-top:40px;
+    padding: 0 20px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.menu-item-discription{
+display: flex;
+flex-direction: column;
+padding: 20px;
+align-items:flex-start;
+justify-content: space-between;
+row-gap: 12px;
+
+}
+.el{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 114px;
+}
+
+
+.pagination-drink{
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+.pag-drink{ 
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+height: 46px;
+padding: 8px 16px 8px 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+column-gap: 8px;
+transition: 0.5s ease-in-out;
+}
+
+@media (hover: hover){
+    .header_nav-pic > .line-hover::after{
+        width: 100%;
+        left: 0;
+    }
+    .pag-drink:hover{
+        cursor: pointer;
+        background-color: #665F55; 
+    }
+    .pag-drink.active:hover{
+        cursor: default;
+        pointer-events: none;
+    }
+    .pag-drink:hover > p{
+    color: #E1D4C9;
+}
+.pag-drink:hover > .logo-drink{
+    background-color:#E1D4C9;
+}
+.galery-item:hover > .itemImg > img{
+    transform: scale(0.91);
+    }
+    .galery-item:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+.logo-drink{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+.logo-drink {
+    padding-top: 6px;
+    padding-left: 6px;
+}
+.pag-drink.active > .logo-drink{
+    background-color:#E1D4C9; 
+}
+
+.pag-drink.active{
+    background-color: #665F55;
+    user-select: none;
+}
+
+.pag-text{
+    color:#403F3D;
+
+}
+
+.pag-drink.active > .pag-text{
+    color: #E1D4C9;
+}
+
+.itemImg{
+    overflow: hidden;
+}
+
+.itemImg > img{
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.fictiv-h1{
+    display: none;
+}
+
+.header_nav-pic-btn{
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.btn-more{
+    display: none;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        border: 1px solid #665F55;
+        border-radius: 100px;
+    }
+
+@media (min-width: 769px) and (max-width: 1430px) {
+  
+    .main_title.p2{
+       padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1050px){
+    .menu-gallery .galery-item:nth-child(5), .menu-gallery .galery-item:nth-child(6), .menu-gallery .galery-item:nth-child(7), .menu-gallery .galery-item:nth-child(8){
+        display: none;
+        }
+        .btn-more{
+            display: flex;}
+            .menu-gallery{
+                margin-bottom: 40px;
+                  padding: 0 34px;
+                 
+              }
+}
+@media (min-width: 381px) and (max-width: 768px){
+    
+
+.main_title.p2{
+    max-width: 705px;
+   padding-left: 8px;
+}
+.main_title.p2{
+    margin-top: -3px;
+    margin-bottom: 39px;
+    
+}
+.menu-gallery{
+  margin-bottom: 40px;
+    padding: 0 34px;
+   
+}
+.menu-gallery .galery-item:nth-child(5), .menu-gallery .galery-item:nth-child(6), .menu-gallery .galery-item:nth-child(7), .menu-gallery .galery-item:nth-child(8){
+display: none;
+}
+.btn-more{
+    display: flex;
+
+}
+}
+
+
+@media (max-width: 380px){
+    .container{
+        margin-top: 0;
+    }
+   .main_title.p2{
+    width: 348px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 36px;
+   } 
+   .pagination-drink{
+    column-gap: 8px;
+   }
+   .menu-gallery .galery-item:nth-child(5), .menu-gallery .galery-item:nth-child(6), .menu-gallery .galery-item:nth-child(7), .menu-gallery .galery-item:nth-child(8){
+    display: none;
+    }
+    .btn-more{
+        display: flex;
+    }
+    .menu-gallery{
+        margin-bottom: 40px;
+    }
+}
